@@ -30,9 +30,14 @@ export default function News() {
           articles.map(element => {
             return <div className='col-md-4'>
               <Newsitem key={element.url} title={element.title} description={element.description} urlToImage={element.urlToImage} url={element.url}/>
+             
             </div>
           })
         }
+      </div>
+      <div className='container d-flex justify-content-between'>
+        <button className='btn-primary'>Prev</button>
+        <button className='btn-primary'>Next</button>
       </div>
     </div>
   )
