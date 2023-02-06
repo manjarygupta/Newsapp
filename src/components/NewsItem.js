@@ -1,18 +1,16 @@
 import React from 'react'
 
-export default function NewsItem(props) {
-  return (
-    <>
-      
-                    <div class="card">
-                        <img src={props.urlToImage} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title">{props.title}</h5>
-                            <p class="card-text">{props.description}</p>
-                            <a href={props.url} class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-        
-    </>
-  )
+export default function Newsitem(props) {
+    return (
+        <>
+            <div className="card">
+                <img src={props.urlToImage} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{props.title}</h5>
+                    <p className="card-text">{props.description}</p>
+                    <a href={props.url} className="btn btn-primary">Read Full News</a>
+                </div>
+            </div>
+        </>
+    )
 }
